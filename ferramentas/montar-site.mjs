@@ -11,7 +11,7 @@ await mkdir(DOCS, { recursive: true });
 const reset = `<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>`;
 function documento(conteudo) {
   const c = conteudo.replace(/<meta name="viewport"[^>]*>\s*/g, "");
-  return `<!doctype html>\n<html lang="pt-BR">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n${reset}\n${c}\n</html>\n`;
+  return `<!doctype html>\n<html lang="pt-BR">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n<meta name="description" content="AchaAI Casa: compara itens de casa pelo preço final na sua porta, com frete, montagem e imposto. Projeto de estudo, preços de demonstração.">\n${reset}\n${c}\n</html>\n`;
 }
 
 await writeFile(`${DOCS}/index.html`, documento(await readFile("casa.html", "utf8")));
