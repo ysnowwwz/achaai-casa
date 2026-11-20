@@ -121,6 +121,8 @@ button, input, select { font: inherit; color: inherit; }
 .caso s { color: var(--muted); }
 .dica { font: 12px var(--mono); color: var(--muted); }
 .dica span { color: var(--fg); }
+.irmao { font: 500 12px var(--mono); color: var(--muted); text-decoration: none; width: fit-content; border-bottom: 1px solid var(--line); }
+.irmao:hover { color: var(--accent); border-color: var(--accent); }
 
 /* ================= PRODUTO ================= */
 .vista { padding-top: 84px; }
@@ -469,6 +471,7 @@ button, input, select { font: inherit; color: inherit; }
           <div class="comodos" id="comodos">${comodos.map(c => `<button data-c="${esc(c)}" aria-pressed="${c === comodoAtivo}">${ICONE[c] || ""}${esc(c)}</button>`).join("")}</div>
           ${caso ? `<a class="caso" href="#${caso.p.id}"><img src="${caso.p.recorte}" alt=""><small>A vitrine que mais engana hoje</small><span>${esc(caso.p.nome)}: <s>${brlCurto(caso.r.porVitrine.preco)} na vitrine</s>, chega por <b>${brlCurto(caso.r.porVitrine.total)}</b> e cai para ${caso.r.posVitrine}º lugar</span></a>` : ""}
           <span class="dica"><span>Toque</span> num produto para ver a corrida · <span>arraste um sobre o outro</span> para comparar</span>
+          <a class="irmao" href="https://ysnowwwz.github.io/achaaiprecos/" target="_blank" rel="noopener">Procurando eletrônicos? Veja o site irmão, AchaAI ↗</a>
         </div>
       </section>`;
     const itens = [...document.querySelectorAll(".item")];
@@ -633,7 +636,7 @@ button, input, select { font: inherit; color: inherit; }
         </div>
       </div></section>
 
-      <footer class="wrap rodape"><span>${esc(regra())}</span><span>Protótipo de estudo. Preços, fretes e montagens de demonstração. Fotos do Wikimedia Commons com licença livre, fundo removido. Marcas e lojas aparecem só como texto.</span></footer>
+      <footer class="wrap rodape"><span>${esc(regra())}</span><span>Protótipo de estudo. Preços, fretes e montagens de demonstração. Fotos do Wikimedia Commons com licença livre, fundo removido. Marcas e lojas aparecem só como texto.</span><a class="irmao" href="https://ysnowwwz.github.io/achaaiprecos/" target="_blank" rel="noopener">Site irmão para eletrônicos: AchaAI ↗</a></footer>
     </div>`;
 
     const eco = document.getElementById("eco"); if (eco) contar(eco, 0, r.economia, 1.6, brlCurto);
