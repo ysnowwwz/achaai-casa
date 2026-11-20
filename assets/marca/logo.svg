@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" role="img" aria-label="AchaAI Casa">
+  <!-- Logo AchaAI Casa: irmã da AchaAI (mesma lupa com seta caindo), agora dentro de uma casinha. Fundo linho. -->
+  <rect width="420" height="96" rx="20" fill="#ebe3d5"/>
+  <g transform="translate(16 14) scale(1.05)">
+    <path d="M32 3 60 24v28a9 9 0 0 1-9 9H13a9 9 0 0 1-9-9V24Z" fill="#c2502a"/>
+    <circle cx="28" cy="35" r="11.5" fill="none" stroke="#ebe3d5" stroke-width="5.5"/>
+    <path d="M36.5 43.5 46 53" stroke="#ebe3d5" stroke-width="6.5" stroke-linecap="round"/>
+    <path d="M23 33l5 5 5-5" fill="none" stroke="#ebe3d5" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <text x="98" y="64" font-family="'Bricolage Grotesque', 'Trebuchet MS', sans-serif" font-weight="800" font-size="52" letter-spacing="-1.5" fill="#2b2018">Acha<tspan fill="#c2502a">AI</tspan></text>
+  <rect x="300" y="34" width="96" height="30" rx="7" fill="none" stroke="#2b2018" stroke-opacity=".25"/>
+  <text x="348" y="55" text-anchor="middle" font-family="'Geist Mono', Consolas, monospace" font-weight="600" font-size="15" letter-spacing="4" fill="#7a6a5a">CASA</text>
+</svg>
