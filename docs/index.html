@@ -582,7 +582,7 @@ button, input, select { font: inherit; color: inherit; }
     document.documentElement.style.setProperty("--glow", p.cor);
     const vx = r.porVitrine;
     const [inteiro, cent] = brl(m.total).replace("R$", "").trim().split(",");
-    const temMontagem = D.ofertas.some(o => o.produtoId === p.id && o.montagem > 0), // olha o dado original, não a conta com a escolha atual prazo = escolhas.prazo(), montar = escolhas.montagem();
+    const temMontagem = D.ofertas.some(o => o.produtoId === p.id && o.montagem > 0) /* olha o dado original, não a conta com a escolha atual */, prazo = escolhas.prazo(), montar = escolhas.montagem();
     const podio = r.noPrazo.slice(0, 3);
     $app.innerHTML = `<div class="vista">
       <div class="wrap"><a class="voltar" href="#inicio">← todos os produtos</a></div>
